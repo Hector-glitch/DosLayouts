@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DosLayouts</string>
+    <string name="hint">hint</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="button">Button</string>
+    <string name="nombre">Nombre</string>
+    <string name="sing_up">Sing up</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="numero_de_telefono">Numero de telefono</string>
+    <string name="email">Email</string>
 </resources>

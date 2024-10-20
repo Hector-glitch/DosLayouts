@@ -10,24 +10,29 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:b
-        android:text="Button"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#00B61E1E"
+        android:radius="10dp"
+        android:text="@string/sing_up"
+        android:textColor="#070707"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="117dp"
         android:layout_height="136dp"
-        android:layout_marginTop="56dp"
         android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163"
         app:srcCompat="@drawable/_144760" />
 
     <ImageButton
@@ -37,44 +42,101 @@
         android:layout_marginTop="100dp"
         android:background="#00FFFFFF"
         android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367"
         app:srcCompat="@drawable/outline_add_circle_outline_24"
         tools:srcCompat="@drawable/outline_add_circle_outline_24" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="176dp"
-        android:layout_height="72dp"
+        android:layout_width="187dp"
+        android:layout_height="84dp"
         android:layout_marginTop="200dp"
         android:fontFamily="sans-serif-black"
-        android:text="Create New Account"
+        android:text="@string/create_new_account"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:radius = "10dp"
+        android:width="2dp"
+        android:color="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="1dp"
         tools:ignore="MissingConstraints"/>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="220dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="284dp"
-        android:hint="hint"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        android:id="@+id/textInputEditText"
+        android:background="@drawable/textfield_style"
+        android:textColorHint="@color/black"
+        android:layout_width="234dp"
+        android:layout_height="54dp"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText2"
+        android:background="@drawable/textfield_style"
+        android:layout_width="233dp"
+        android:layout_height="54dp"
+        android:hint="@string/email"
+        android:textColorHint="@color/black"
+        android:inputType="textWebEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText3"
+        android:background="@drawable/textfield_style"
+        android:layout_width="233dp"
+        android:layout_height="54dp"
+        android:hint="@string/numero_de_telefono"
+        android:textColorHint="@color/black"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText4"
+        android:background="@drawable/textfield_style"
+        android:layout_width="235dp"
+        android:layout_height="55dp"
+        android:hint="@string/contrase_a"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
